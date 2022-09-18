@@ -86,35 +86,3 @@ glue_job.write_user_level_info_table()
 
 # ETL Process completed.
 glue_job.complete()
-
-
-
-best_medium_for_partners_by_dates = """with best_medium_for_partners as (
-    SELECT partner_id,utm_medium,   
-    ROW_NUMBER() OVER(PARTITION BY partner_id order by unique_users_installed desc) AS row_num  
-FROM de_events_op where event_date = '{event_date}'
-)
-select partner_id,utm_medium from best_medium_for_partners where row_num = 1"""
-
-best_medium_for_partners_of_all_time = """with medium_counts_for_partners as (
-    SELECT partner_id,utm_medium,sum(unique_users_installed) as count from de_events_op group by 1,2
-    ),
-    best_medium_for_partners as (
-        select partner_id,utm_medium,
-            ROW_NUMBER() OVER(PARTITION BY partner_id order by count desc) AS row_num 
-        from medium_counts_for_partners
-    )    
-    ROW_NUMBER() OVER(PARTITION BY partner_id order by unique_users_installed desc) AS row_num  
-FROM de_events_op where event_date = '{event_date}'
-)
-select partner_id,utm_medium from best_medium_for_partners where row_num = 1"""
-
-
-
-
-
-discard_utm_campaign = """select utm_campaign, sum(unique_users_installed) from de_events_op group by 1 order by 2 asc limit 1"""
-
-
-
-best_time_for_user_medium = """select utm_medium, hour, sum(unique_users_installed) from de_events_op group by 1,2 desc limit 1"""
