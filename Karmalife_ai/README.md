@@ -1,4 +1,4 @@
-## I have only used AWS as cloud. I am writing the job by refering it as AWS cloud.
+## I am writing the job by refering it as AWS cloud.
 ## We can write a ETL glue job for extrating, transforming and loading data.
 ## We can use crawlers for crawling the tables.
 ## AWS S3 for storting data.
