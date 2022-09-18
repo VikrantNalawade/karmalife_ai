@@ -1,0 +1,10 @@
+event_date,event_timestamp,inititied_by,partner_id,utm_medium,utm_campaign,unique_users_coming_to_web,unique_users_coming_to_web_list,unique_users_installed,unique_users_installed_list
+20220918,9/18/2022 2:32,TRUE,amb5-nbgu-ydf8-yfvb,SMS,Diwali,100000,"[id,id,id,….]",90000,"[id,id,id,….]"
+20220918,9/18/2022 20:32,TRUE,amb5-nbgu-ydf8-yfpt,Whatsapp,Diwali,200000,"[id,id,id,….]",150000,"[id,id,id,….]"
+20220918,9/18/2022 10:32,TRUE,jkhb5-nbgu-ydf8-yfvb,Whatsapp,Holi,150000,"[id,id,id,….]",127000,"[id,id,id,….]"
+20220918,9/18/2022 0:32,TRUE,amb5-luyu-ydf8-yfvb,SMS,Padwa,190000,"[id,id,id,….]",172000,"[id,id,id,….]"
+20220918,9/18/2022 7:32,TRUE,amb5-nbgu-k888-yfvb,SMS,Holi,80000,"[id,id,id,….]",20000,"[id,id,id,….]"
+20220918,9/18/2022 1:32,TRUE,amb5-nbgu-ydf8-yfvb,Whatsapp,Padwa,250000,"[id,id,id,….]",196000,"[id,id,id,….]"
+20220918,9/18/2022 2:32,TRUE,yjvn-nbgu-ydf8-yfvb,SMS,Diwali,189000,"[id,id,id,….]",154000,"[id,id,id,….]"
+20220918,9/18/2022 21:32,TRUE,amb5-nbgu-ydf8-jtgn,Whatsapp,Diwali,324000,"[id,id,id,….]",278000,"[id,id,id,….]"
+20220918,9/18/2022 5:32,TRUE,amb5-45hn-ydf8-yfvb,SMS,Holi,178000,"[id,id,id,….]",125000,"[id,id,id,….]"
